@@ -19,4 +19,4 @@ int main() {
     printf("Media das notas: %.2f\n", media);
 
     return 0;
-} 
+}

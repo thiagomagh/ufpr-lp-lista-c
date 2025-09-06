@@ -29,9 +29,9 @@ int main() {
         }
     } else if (num3 < num1 && num3 < num2) {
         if (num1 < num2) {
-            printf("\nOrdem crescente: %.2f, %.2f, %.2f", num3, num1, num2);
+            printf("\nOrdem crescente: %.2f, %.2f, %.2f\n", num3, num1, num2);
         } else {
-            printf("\nOrdem crescente: %.2f, %.2f, %.2f", num3, num2, num1);
+            printf("\nOrdem crescente: %.2f, %.2f, %.2f\n", num3, num2, num1);
         }
     }
 

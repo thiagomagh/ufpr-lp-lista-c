@@ -10,15 +10,13 @@
 
 int main()
 {
-    int idade, a = 0, olhos_azuis = 0, ruivos = 0;
-    float altura, peso, soma_idade_baixinhos = 0;
-    int contador_baixinhos = 0;
+    int idade, cont_idade50_peso60 = 0, cont_idade_baixos = 0, cont_olhos_azuis = 0, cont_ruivos = 0;
+    float altura, peso, soma_idade_baixos = 0.0;
     char olho, cabelo;
 
-    for (int i = 1; i <= 6; i++)
-    {
-        printf("Pessoa %d\n", i);
-
+    for (int i = 1; i <= 6; i++) {
+        printf("\n");
+        printf("=== PESSOA %d ===\n", i);
         printf("Idade: ");
         scanf("%d", &idade);
         printf("Altura: ");
@@ -30,30 +28,40 @@ int main()
         printf("Cor do cabelo (P - preto; C - castanho; L - louro; R - ruivo): ");
         scanf(" %c", &cabelo);
 
-        if (idade > 50 && peso < 60)
-        {
-            a++;
+        if (idade > 50 && peso < 60) {
+            cont_idade50_peso60++;
         }
-        if (altura < 1.50)
-        {
-            contador_baixinhos++;
-            soma_idade_baixinhos += idade;
+        
+        if (altura < 1.50) {
+            soma_idade_baixos = soma_idade_baixos + idade;
+            cont_idade_baixos++;
         }
-        if (olho == 'A')
-        {
-            olhos_azuis++;
+
+        if (olho == 'A' || olho == 'a') {
+            cont_olhos_azuis++;
         }
-        if (cabelo == 'R' && olho != 'A')
-        {
-            ruivos++;
+
+        if ((cabelo == 'R' || cabelo == 'r') && (olho != 'A' && olho != 'a')) {
+            cont_ruivos++;
         }
+
         printf("\n");
     }
 
-    printf("Quantidade de pessoas com idade superior a 50 anos e peso inferior a 60 kg: %d\n", a);
-    printf("Média das idades das pessoas com altura inferior a 1.50m: %.1f\n", contador_baixinhos > 0 ? soma_idade_baixinhos / contador_baixinhos : 0);
-    printf("Porcentagem de pessoas com olhos azuis: %.2f%%\n", (float)olhos_azuis / 6 * 100);
-    printf("Quantidade de pessoas ruivas e que não possuem olhos azuis: %d\n", ruivos);
+    printf("Quantidade de pessoas com idade superior a 50 anos e peso inferior a 60 kg: %d\n", cont_idade50_peso60);
+    printf("Média das idades das pessoas com altura inferior a 1.50m: %.2f\n", cont_idade_baixos > 0 ? soma_idade_baixos / cont_idade_baixos : 0.0);
+
+    /*
+    if (cont_idade_baixos > 0) {
+        printf("Média das idades das pessoas com altura inferior a 1.50m: %.2f\n", soma_idade_baixos / cont_idade_baixos);
+        
+    } else {
+        printf("Média das idades das pessoas com altura inferior a 1.50m: %.2f\n", 0.0);
+    } */
+
+    // type cast: converte o numero para tipo float antes da divisao
+    printf("Porcentagem de pessoas com olhos azuis: %.2f%%\n", (float)cont_olhos_azuis / 6.00 * 100);
+    printf("Quantidade de pessoas ruivas e que não possuem olhos azuis: %d\n", cont_ruivos);
 
     return 0;
 }

@@ -8,10 +8,11 @@
     - a porcentagem de pessoas com peso inferior a 40 kg entre todas as pessoas analisadas. */
 
 int main() {
-    float altura, peso, soma_altura = 0, peso_abaixo_40 = 0;
+    float altura, peso, soma_altura = 0.0, peso_abaixo_40 = 0.0;
     int idade, idade_acima_50 = 0, cont_altura = 0;
     
     for (int i = 1; i <= 5; i++) {
+        printf("\n");
         printf("Digite a idade: ");
         scanf("%d", &idade);
         printf("Digite a altura: ");
@@ -30,9 +31,7 @@ int main() {
         
         if (peso < 40.00) {
             peso_abaixo_40++;
-        }
-
-        printf("\n");
+        }       
     }
 
     printf("Quantidade de pessoas com idade superior a 50 anos: %d\n", idade_acima_50);

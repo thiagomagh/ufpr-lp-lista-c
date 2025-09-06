@@ -6,34 +6,31 @@
 
 int main()
 {
-    int numero, pares = 0, primos = 0;
+    int num, soma_pares  = 0, soma_primos = 0, cont_divisores;
+    printf("\n");
 
-    for (int contador = 0; contador < 10; contador++)
-    {
-        scanf("%d", &numero);
-        int i = 1, verificador = 0;
-        while (i <= numero)
-        {
-            if (numero % i == 0)
-            {
-                verificador++;
+    for (int i = 1; i <= 10; i++) {   
+        printf("%d. Digite um valor: ", i);
+        scanf("%d", &num);
+        cont_divisores = 0;
+
+        for (int j = 1; j <= num; j++) {
+            if (num % j == 0) {
+                cont_divisores++;
             }
-            i++;
         }
 
-        if (verificador == 2)
-        {
-            primos = primos + numero;
+        if (num % 2 == 0) {
+            soma_pares  = soma_pares + num;
         }
 
-        if (numero % 2 == 0)
-        {
-            pares = pares + numero;
+        if (cont_divisores == 2) {
+            soma_primos = soma_primos + num;
         }
     }
 
-    printf("Soma dos primos = %d\n", primos);
-    printf("Soma dos pares = %d\n", pares);
+    printf("\nSoma dos numeros primos: %d\n", soma_primos);
+    printf("Soma dos numeros pares = %d\n", soma_pares );
 
     return 0;
 }

@@ -10,28 +10,43 @@
 
 int main() {
     char cod_transacao;
-    float valor, val_vista = 0, val_prazo = 0;
+    double valor = 0.0, val_vista = 0.0, val_prazo = 0.0;
     
     for (int i = 1; i <= 15; i++) {
-        printf("\nValor da compra %d: ", i);
-        scanf("%f", &valor);
-        printf("Tipos de pagamento: V (a vista) ou P (a prazo).\n");
-        printf("Informe o tipo: ");
-        scanf(" %c", &cod_transacao);
+        while (1) {
+            printf("\n");
+            printf("=== COMPRA DE NUMERO %d ===\n", i);
+            printf("Valor da compra: ");
+            scanf("%lf", &valor);
 
-        if (cod_transacao == 'v' || cod_transacao == 'V') {
-            val_vista = val_vista + valor;
-        } else if (cod_transacao == 'p' || cod_transacao == 'P') {
-            val_prazo = val_prazo + valor;
-        } else {
-            printf("\nOpcao invalida");
+            if (valor <= 0.0) {
+                printf("\nEntrada invalida. Informe um valor acima de zero.\n");
+            } else {
+                break;
+            }
+        }
+
+        while (1) {
+            printf("Tipos de pagamento: V (a vista) ou P (a prazo).\n");
+            printf("Informe o tipo: ");
+            scanf(" %c", &cod_transacao);
+
+            if (cod_transacao == 'v' || cod_transacao == 'V') {
+                val_vista = val_vista + valor;
+                break;
+            } else if (cod_transacao == 'p' || cod_transacao == 'P') {
+                val_prazo = val_prazo + valor;
+                break;
+            } else {
+                printf("\nTipo invalido. Tente novamente.\n");         
+            }
         }
     }
 
-    printf("\nValor total a vista = %.2f\n", val_vista);
-    printf("Valor total a prazo = %.2f\n", val_prazo);
-    printf("Valor total das compras efetuadas = %.2f\n", val_vista + val_prazo);
-    printf("Primeira prestacao = %.2f\n", val_prazo / 3);
+    printf("\nValor total a vista = %.2lf\n", val_vista);
+    printf("Valor total a prazo = %.2lf\n", val_prazo);
+    printf("Valor total das compras efetuadas = %.2lf\n", val_vista + val_prazo);
+    printf("Primeira prestacao = %.2lf\n", val_prazo / 3.00);
 
     return 0;
 }

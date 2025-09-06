@@ -4,10 +4,10 @@
 
 /* Faça um programa que receba três notas de um aluno, calcule e mostre a média aritmética e a mensagem constante na tabela a seguir. Aos alunos que ficaram para exame, calcule e mostre a nota que deverão tirar para serem aprovados, considerando que a média exigida é 6,0. */
 
-/* MÉDIA aritmética mensagem:
-    - 0   |--- 3,0:  Reprovado
-    - 3,0 |--- 7,0:  Exame
-    - 7,0 |--- 10,0: Aprovado */
+/* Se a média aritmética for:
+    - entre 0 a 3,0     --> Mostrar: Reprovado
+    - entre 3,0 a 7,0   --> Mostrar: Exame
+    - entre 7,0 a 10,0  --> Mostrar: Aprovado */
 
 int main() {
     float nota1, nota2, nota3, media, nota_exame;

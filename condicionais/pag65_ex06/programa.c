@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-// Pág.65 e Ex. 06
+// Pág.65 - Ex. 06:
+
 /* Faça um programa que receba um número inteiro e verifique se é par ou ímpar. */
 
 int main() {

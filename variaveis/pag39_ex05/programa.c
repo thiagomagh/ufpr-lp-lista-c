@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-// Pag. 39 e Ex. 05
-/* Faça um programa que receba o salário de um funcionário e o percentual de aumento, calcule e mostre
-o valor do aumento e o novo salário. */
+// Pag. 39 - Ex. 05:
+
+/* Faça um programa que receba o salário de um funcionário e o percentual de aumento, calcule e mostre o valor do aumento e o novo salário. */
 
 int main() {
     float salario, perc, aumento, novo_salario;

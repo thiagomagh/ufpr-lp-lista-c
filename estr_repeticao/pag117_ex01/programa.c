@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Pag. 117 e Ex. 01:
+// Pag. 117 - Ex. 01:
 
 /* 1. Um funcionário de uma empresa recebe, anualmente, aumento salarial. Sabe-se que:
     a) Esse funcionário foi contratado em 2005, com salário inicial de R$ 1.000,00.

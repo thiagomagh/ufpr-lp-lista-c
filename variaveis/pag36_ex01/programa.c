@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-// Pag. 36 e Ex. 01
+// Pag. 36 - Ex. 01:
+
 /* Faça um programa que receba quatro números inteiros, calcule e mostre a soma desses números. */
 
 int main() {

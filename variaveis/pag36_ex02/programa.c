@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-// Pag. 36 e Ex. 02
+// Pag. 36 - Ex. 02:
+
 /* Faça um programa que receba três notas, calcule e mostre a média aritmética. */
 
 int main() {

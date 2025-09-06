@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Pag. 147 e Ex. 09:
+// Pag. 147 - Ex. 09:
 
 /* Faça um programa que receba dez idades, pesos e alturas, calcule e mostre:
     - a média das idades das dez pessoas;

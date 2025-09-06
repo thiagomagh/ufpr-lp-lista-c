@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-// Pag. 40 e Ex. 07
-/* Faça um programa que receba o salário base de um funcionário, calcule e mostre seu salário a receber,
-sabendo-se que o funcionário tem gratificação de R$ 50 e paga imposto de 10% sobre o salário base. */
+// Pag. 40 - Ex. 07:
+
+/* Faça um programa que receba o salário base de um funcionário, calcule e mostre seu salário a receber, sabendo-se que o funcionário tem gratificação de R$ 50 e paga imposto de 10% sobre o salário base. */
 
 int main() {
     float sal_base, sal_receber, imp_sal;

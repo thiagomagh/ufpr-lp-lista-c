@@ -1,9 +1,13 @@
 #include <stdio.h>
 
-// Pág.62 e Ex. 02   
-/* Faça um programa que receba três notas de um aluno, calcule e mostre a média aritmética e a mensagem
-constante na tabela a seguir. Aos alunos que ficaram para exame, calcule e mostre a nota que deverão
-tirar para serem aprovados, considerando que a média exigida é 6,0. */
+// Pág.62 - Ex. 02:
+
+/* Faça um programa que receba três notas de um aluno, calcule e mostre a média aritmética e a mensagem constante na tabela a seguir. Aos alunos que ficaram para exame, calcule e mostre a nota que deverão tirar para serem aprovados, considerando que a média exigida é 6,0. */
+
+/* MÉDIA aritmética mensagem:
+    - 0   |--- 3,0:  Reprovado
+    - 3,0 |--- 7,0:  Exame
+    - 7,0 |--- 10,0: Aprovado */
 
 int main() {
     float nota1, nota2, nota3, media, nota_exame;

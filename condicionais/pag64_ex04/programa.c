@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-// Pág.64 e Ex. 04
-/* Faça um programa que receba três números e mostre-os em ordem crescente. Suponha que o usuário
-digitará três números diferentes. */
+// Pág.64 - Ex. 04:
+
+/* Faça um programa que receba três números e mostre-os em ordem crescente. Suponha que o usuário digitará três números diferentes. */
 
 int main() {
     float num1, num2, num3;

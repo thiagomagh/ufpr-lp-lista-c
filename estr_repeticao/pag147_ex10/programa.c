@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Pag. 147 e Ex. 10:
+// Pag. 147 - Ex. 10:
 
 /* Faça um programa que receba dez números, calcule e mostre a soma dos números pares e a soma dos números primos. */
 

@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-// Pag. 38 e Ex. 03
+// Pag. 38 - Ex. 03:
+
 /* Faça um programa que receba três notas e seus respectivos pesos, calcule e mostre a média ponderada. */
 
 int main() {

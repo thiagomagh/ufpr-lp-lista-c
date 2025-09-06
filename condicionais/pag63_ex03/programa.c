@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-// Pág.63 e Ex. 03
+// Pág.63 - Ex. 03:
+
 /* Faça um programa que receba dois números e mostre o maior. */
 
 int main() {

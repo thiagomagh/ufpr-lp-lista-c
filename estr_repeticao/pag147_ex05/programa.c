@@ -8,7 +8,7 @@ int main() {
     int result;
 
     for (int i = 1; i <= 10; i++) {
-        printf("\nTabuada do %d\n", i);
+        printf("\n=== TABUADA DO %d ===\n", i);
 
         for (int j = 0; j <= 10; j++) {
             result = i * j;
